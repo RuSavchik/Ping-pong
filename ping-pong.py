@@ -1,6 +1,6 @@
 from superwires import games, color
 
-games.init(screen_width = 437, screen_height = 780, fps = 50)
+games.init(screen_width=437, screen_height=780, fps=50)
 
 
 # create player object
@@ -28,8 +28,8 @@ class Ball(games.Sprite):
 
     def __init__(self):
         super(Ball, self).__init__(image=Ball.image,
-                                   x=games.screen.width/2,
-                                   y=0,
+                                   x=games.screen.width / 2,
+                                   y=20,
                                    top=0,
                                    dx=Ball.speed,
                                    dy=Ball.speed)
